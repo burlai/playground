@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'
 import Counter from './components/Counter';
+import FormWithValidation from './components/FormWithValidaiton';
 import PostList from './components/SimpleList';
 import HelloWorld from './components/SimplestComponet';
 
@@ -15,6 +16,9 @@ const App = () => {
       <br/>
       <h4 className="h4">List of posts:</h4>
       <PostList />
+      <br/>
+      <h4 className="h4">Form with validation</h4>
+      <FormWithValidation />
     </div>
   );
 }
