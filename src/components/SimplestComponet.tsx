@@ -1,10 +1,10 @@
 import React from "react";
 
-interface HelloWorldProps {
+interface Props {
   name: string;
 }
 
-const HelloWorld: React.FunctionComponent<HelloWorldProps> = ({ name }) => {
+const HelloWorld: React.FunctionComponent<Props> = ({ name }) => {
   return <div>Hello, {name}!</div>;
 };
 
