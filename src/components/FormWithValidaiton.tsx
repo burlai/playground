@@ -6,7 +6,7 @@ const FormWithValidation = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = (event: any) => { // test
     event.preventDefault();
 
     if (!name || !email || !password) {
