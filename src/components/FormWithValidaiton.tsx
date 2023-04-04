@@ -6,7 +6,7 @@ const FormWithValidation = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (event: any) => { // test
+  const handleSubmit = (event: any) => {
     event.preventDefault();
 
     if (!name || !email || !password) {
@@ -34,20 +34,37 @@ const FormWithValidation = () => {
     <form onSubmit={handleSubmit}>
       <label className="form-label me-2 d-block">
         Name:
-        <input className="form-control" type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input
+          className="form-control"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
       </label>
       <label className="form-label me-2 d-block">
         Email:
-        <input className="form-control" type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input
+          className="form-control"
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </label>
       <label className="form-label me-2 d-block">
         Password:
-        <input className="form-control" type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input
+          className="form-control"
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
       </label>
 
       {error && <div className="mt-2 alert alert-danger">{error}</div>}
 
-      <button className="btn btn-primary mt-2" type="submit">Sign Up</button>
+      <button className="btn btn-primary mt-2" type="submit">
+        Sign Up
+      </button>
     </form>
   );
 };
